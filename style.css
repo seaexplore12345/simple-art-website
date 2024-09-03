@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+}
+
+.wellcome {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(rgba(157, 158, 157, 0.7), rgba(96, 66, 66, 0.6)), url('./img/gg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+}
+
+.wellcomeMsg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    color: #fdfdfd;
+    text-align: center;
+}
+
+.wellcomeMsg .headTag {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+section {
+    display: block;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.sectionHead {
+    text-align: center;
+    font-size: 40px;
+    margin: 25px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.item-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    box-shadow: 9px 6px 13px rgba(0, 0, 0, 0.32);
+    transition: all 0.2s;
+}
+.item-box:hover {
+    transform: scale(1.2);
+}
+
+.item-box .item-box-img {
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.item-box .item-box-img > img {
+    width: 100%;
+    height: auto;
+}
+
+.item-box-head {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item-box-sub-text {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-align: center;
+}
+
+.item-box-btn {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.item-box-btn:hover {
+    background-color: #0056b3;
+}
+
+.parallex-section {
+    height: 50vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#parallex-set-3 {
+    background-image: url('./img/parallex-3.jpg');
+}
+
+#parallex-set-2 {
+    background-image: url('./img/parallex-2.jpg');
+}
+
+#artModal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation: modalopen 0.4s;
+}
+
+@keyframes modalopen {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #aaaaaa;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.modal-content h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
